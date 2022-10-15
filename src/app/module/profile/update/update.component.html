@@ -1,0 +1,32 @@
+<div class="center-content">
+   <form [formGroup]="formGroupUpdate">
+        <div class="form-group">
+            <div>Name</div>
+            <div><input formControlName="name" class="input" type="text" placeholder="name"></div>
+        </div>
+        <div class="form-group">
+            <div>Email</div>
+            <div>
+                <input formControlName="email" class="input" type="email" placeholder="example@email.com">
+            </div>
+            <div *ngIf="formGroupUpdate.controls['email'].valid" >
+                <span style="color: green;" >Email Sudah Valid</span>
+            </div>
+            <div *ngIf="!formGroupUpdate.controls['email'].valid">
+                <span style="color: red;" >Email Tidak Valid</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div>Birthday</div>
+            <div><input formControlName="birthday" class="input" type="text" placeholder="birthday"></div>
+        </div>
+        <div class="form-group">
+            <div>Address</div>
+            <div><input formControlName="address" class="input" type="text" placeholder="address"></div>
+        </div>
+        <div class="form-group">
+            <button (click)="checkValidation()" type="button" class="btn-submit">Submit Form</button>
+        </div>
+   </form>
+</div>
+

@@ -1,0 +1,38 @@
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Login</h1>
+        </div>
+        <div class="data">
+            <h1>Username</h1>
+            <app-text-input [isPassword]="false" (iniEvent)="FunctionAuth($event)"></app-text-input>
+            <h1>Password</h1>
+            <app-text-input [isPassword]="true" (iniEvent)="FunctionAuth($event)"></app-text-input>
+        </div>
+        <div class="button">
+            <button>Login</button>
+            <button (click)="clear()">Clear</button>
+        </div>
+
+        <div class="tableData">
+            <table class="tableText">
+                <tr>
+                    <td>Name : </td>
+                    <td>{{authService.name}}</td>
+                </tr>
+                <tr>
+                    <td>Age : </td>
+                    <td>{{authService.age}}</td>
+                </tr>
+                <tr>
+                    <td>Job : </td>
+                    <td>{{authService.job}}</td>
+                </tr>
+                <tr>
+                    <td>Username : </td>
+                    <td>{{username}}</td>
+                </tr>
+             </table>
+        </div>
+    </div>
+</body>
