@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from '../forms/login/login.component';
-import { ProfileComponent } from '../forms/profile/profile.component';
+import { ProfileComponent } from './profile/profile.component';
 import { SederhanaComponent } from './sederhana/sederhana.component';
 
 const routes: Routes = [
@@ -10,11 +10,11 @@ const routes: Routes = [
     component: SederhanaComponent
   },
   {
-    path: 'login',
+    path: '',
     component: LoginComponent
   },
   {
-    path: 'profile',
+    path: 'profile-update',
     component: ProfileComponent
   }
 ];

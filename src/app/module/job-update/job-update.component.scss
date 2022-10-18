@@ -1,0 +1,87 @@
+.container{
+    padding: 5.5rem 1rem 4rem 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.column-flex{
+    width: 32%;
+}
+
+.card{
+    padding: 0.5rem;
+}
+
+.carousel{
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+}
+.carousel-control-next, .carousel-control-prev{
+    background-color: grey;
+}
+
+.carousel-control-prev{
+    border-radius: 0.5rem 0 0 0.5rem ;
+}
+
+.carousel-control-next{
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.carousel-card{
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content{
+    gap: 1rem;
+}
+
+.keyword{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.keyword-1, .keyword-2, .keyword-3{
+    background-color: #ebf3fc;
+    color: #4b94d8;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-weight:650;
+    font-size: 0.65rem;
+}
+
+@media (max-width: 992px) {
+    .column-flex{
+        width: 45%;
+    }
+  }
+
+  @media (max-width: 767.9px){
+    .column-flex{
+        width: 45%;
+    }
+
+    .carousel-card{
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+  }
+
+  @media (max-width: 580px){
+    .column-flex{
+        width: 100%;
+    }
+  }

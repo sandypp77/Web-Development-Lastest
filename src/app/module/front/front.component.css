@@ -1,0 +1,10 @@
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.center-content button {
+  width: 20rem;
+  text-align: center;
+}/*# sourceMappingURL=front.component.css.map */

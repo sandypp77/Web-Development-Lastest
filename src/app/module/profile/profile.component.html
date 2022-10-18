@@ -1,6 +1,96 @@
-<app-text-input [isPassword]="true" (iniEvent)="iniFunction($event)"></app-text-input>
+<div class="content">
+    <div class="header-content">
+        <div class="image-photo">
+            <img src="./assets/images/avatar-michelle.jpg" alt="">
+            <div class="profile">
+                <h1>Avatar Profile</h1>
+                <p>Front End Developer | Spesialist in Angular</p>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="main">
+        <div class="card bio" style="width: 100%;">
+            <div class="type type-bio">
+                <h5 class="card-title">Biography</h5>
+              </div>
+            <div class="card-body">
+              <p class="card-text">As a university of washington graduate and current Amazon intern, I live and breathe software. I have received 5 best-in-class awards for design and mobile-first development. As a front-end developer intern at amazon, I have implemented real-world industry best practices and turned client/customer concepts into workable models.</p>
+            </div>
+        </div>
+        <div class="card skill" style="width: 100%;">
+            <div class="type type-skill">
+                <h5 class="card-title">Card title</h5>
+            </div>
+            <div class="card-body">
+                <ul class="card-text">
+                    <li>Angular | 
+                        <ngb-rating [(rate)]="currentRate">
+                            <ng-template let-fill="fill" let-index="index">
+                              <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+                            </ng-template>
+                          </ngb-rating>
+                    </li>
+                    <li>
+                        Javascript | 
+                        <ngb-rating [(rate)]="currentRate">
+                            <ng-template let-fill="fill" let-index="index">
+                              <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+                            </ng-template>
+                          </ngb-rating>
+                    </li>
+                    <li>
+                        HTML | 
+                        <ngb-rating [(rate)]="currentRate">
+                            <ng-template let-fill="fill" let-index="index">
+                              <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+                            </ng-template>
+                          </ngb-rating>
+                    </li>
+                    <li>
+                        CSS | 
+                        <ngb-rating [(rate)]="currentRate">
+                            <ng-template let-fill="fill" let-index="index">
+                              <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+                            </ng-template>
+                          </ngb-rating>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card education col-12">
+            <div class="type type-education">
+                <h5 class="card-title">Education</h5>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title">B.S. | Compute Science</h5>
+              <h5 class="card-title">University of Washington</h5>
+              <p class="card-text">September 2017 - June 2021</p>
+              <p class="card-text">GPA: 3.7</p>
+            </div>
+        </div>
+        <div class="card experience col-12">
+            <div class="type type-experience">
+                <h5 class="card-title">Experience</h5>
+              </div>
+            <div class="card-body">
+              <h6 class="card-title">Front-End Developer Intern | Ozone AI</h6>
+              <p class="card-title">June 2021 - current / Bellevue, WA</p>
+              <hr>
+              <ul class="card-text">
+                <li>Performed independent research to identify 30+ project designs and proposed solutions to possible roadblocks</li>
+                <li>Developed 12+ solutions that work with financial software ecosystems for both internal and external products</li>
+                <li>Collaborated with 12 senior team members to learn techniques for writing practical code</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <app-text-input [isPassword]="true" (iniEvent)="iniFunction($event)"></app-text-input>
  {{text}}
 
 <app-table></app-table>
 
- <button (click)="clear()">clear</button>
+ <button (click)="clear()">clear</button> -->

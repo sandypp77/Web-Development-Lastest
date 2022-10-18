@@ -1,0 +1,78 @@
+<div class="center-content">
+    <div class="form1">
+        <form [formGroup]="formGroupSederhana" >
+            <div class="form-group">
+                <div>Name</div>
+                <div><input formControlName="name" class="input" type="text" placeholder="name"></div>
+            </div>
+            <div class="form-group">
+                <div>Email</div>
+                <div>
+                    <input formControlName="email" class="input" type="email" placeholder="example@email.com">
+                </div>
+                <div *ngIf="formGroupSederhana.controls['email'].valid" >
+                    <span style="color: green;" >Email Sudah Valid</span>
+                </div>
+                <div *ngIf="!formGroupSederhana.controls['email'].valid">
+                    <span style="color: red;" >Email Tidak Valid</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>Nickname</div>
+                <div><input formControlName="nickname" class="input" type="text" placeholder="nickname"></div>
+            </div>
+            <div class="form-group">
+                <div>Job</div>
+                <div><input formControlName="job" class="input" type="text" placeholder="job"></div>
+            </div>
+            <div class="form-group">
+                <div>Balance</div>
+                <div><input formControlName="balance" class="input" type="text" placeholder="99999999999"></div>
+            </div>
+            <div class="form-group">
+                <button (click)="checkValidation()" type="button" class="btn-submit">Submit Form</button>
+            </div>
+        </form>
+
+        <div class="padding-top-16">
+            <table>
+                <tr>
+                    <td>Name langsung dari Form Group</td>
+                    <td>: {{ formGroupSederhana.controls["name"].value }}</td>
+                </tr>
+                <tr>
+                    <td>Name dari variable displayName</td>
+                    <td>: {{ displayName }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="form2">
+        <form [formGroup]="formGroupLogin" >
+            <div class="form-group">
+                <div>Username</div>
+                <div><input formControlName="username" class="input" type="text" placeholder="username"></div>
+            </div>
+            <div class="form-group">
+                <div>Password</div>
+                <div><input formControlName="password" class="input" type="password" placeholder="password"></div>
+            </div>
+        </form>
+        <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 0.5rem;gap: 0.5rem;">
+            <button (click)="submitLogin()" type="button">Submit Login</button>
+            <button (click)="backList()">Back</button>
+            <button (click)="submitGet()" type="button">Submit Get</button>
+            <button (click)="submitPost()" type="button">Submit Post</button>
+            {{text}}
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div class="center-content">
+    
+</div>
+
+

@@ -1,6 +1,7 @@
 import { JsonPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/app/services/auth/login.service';
 
 @Component({
@@ -10,12 +11,13 @@ import { LoginService } from 'src/app/services/auth/login.service';
 })
 export class LoginComponent implements OnInit {
 
-  formGroupLogin = new FormGroup({
-    username: new FormControl("", [Validators.required]),
-    password: new FormControl("", [Validators.required])
-  })
+  // formGroupLogin = new FormGroup({
+  //   username: new FormControl("", [Validators.required]),
+  //   password: new FormControl("", [Validators.required])
+  // })
 
   constructor(
+    private readonly router:Router,
     private readonly loginService: LoginService
   ) { }
 
@@ -23,19 +25,21 @@ export class LoginComponent implements OnInit {
   }
 
   submitLogin() {
-    if(this.formGroupLogin.valid){
-      this.loginService.postLogin(this.formGroupLogin.value).subscribe(
-        //next
-        (response) => {
-          alert('success');
-          alert(JSON.stringify(response));
-        },
-        (error) => {
-          alert(JSON.stringify(error));
-        }
-      );
-    }else{
-      alert('Form Not Valid');
-    }
+    this.router.navigate(["tugas5/welcome"])
+
+    // if(this.formGroupLogin.valid){
+    //   this.loginService.postLogin(this.formGroupLogin.value).subscribe(
+    //     //next
+    //     (response) => {
+    //       alert('success');
+    //       alert(JSON.stringify(response));
+    //     },
+    //     (error) => {
+    //       alert(JSON.stringify(error));
+    //     }
+    //   );
+    // }else{
+    //   alert('Form Not Valid');
+    // }
   }
 }

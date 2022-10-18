@@ -29,9 +29,12 @@
               "src/assets/images"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "../my-app-sandy/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../my-app-sandy/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -99,7 +102,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           }
         }
       }

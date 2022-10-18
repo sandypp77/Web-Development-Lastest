@@ -1,0 +1,21 @@
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+.center-content .form-group {
+  padding-top: 8px;
+  padding-top: 8px;
+}
+.center-content .btn-submit {
+  background: red;
+  cursor: pointer;
+}
+.center-content .input {
+  height: 26px;
+  width: 250px;
+  font-weight: 600;
+}
+
+.padding-top-16 {
+  padding-top: 32px;
+}/*# sourceMappingURL=update.component.css.map */

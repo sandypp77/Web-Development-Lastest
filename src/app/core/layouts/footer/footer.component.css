@@ -1,0 +1,8 @@
+.footer {
+  background-color: grey;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: white;
+}/*# sourceMappingURL=footer.component.css.map */

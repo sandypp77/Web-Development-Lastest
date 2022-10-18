@@ -1,0 +1,49 @@
+.column-flex{
+    width: 100%;
+    padding-right: 20rem;
+}
+
+.card{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content{
+    gap: 1rem;
+}
+
+.keyword{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.keyword-1, .keyword-2, .keyword-3{
+    background-color: #ebf3fc;
+    color: #4b94d8;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-weight:650;
+    font-size: 0.65rem;
+}
+
+@media (max-width: 768px){
+
+    .column-flex{
+        width: 100%;
+        padding-right: 0;
+    }
+  }
+
+  @media (max-width: 580px){
+    .column-flex{
+        width: 100%;
+    }
+  }
